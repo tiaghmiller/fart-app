@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fart Button</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #222;
+            color: white;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+        }
+        button {
+            background-color: #ff5733;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 24px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #ff2e00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Press the button for a fart!</h1>
+    <button onclick="playFart()">💨 Fart!</button>
+
+    <audio id="fart-sound" src="fart.mp3"></audio>
+
+    <script>
+        function playFart() {
+            document.getElementById("fart-sound").play();
+        }
+    </script>
+</body>
+</html>
